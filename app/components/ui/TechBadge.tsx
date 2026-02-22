@@ -7,13 +7,12 @@ export default function TechBadge({ name, className = "" }: TechBadgeProps) {
   return (
     <span
       className={`
-        px-3 py-1 text-xs font-medium
-        bg-gray-100 dark:bg-gray-800/50
-        text-gray-700 dark:text-gray-300
-        rounded-full
-        border border-gray-300 dark:border-gray-700/50
-        group-hover:border-gray-400 dark:group-hover:border-gray-600
-        group-hover:bg-gray-200 dark:group-hover:bg-gray-800
+        inline-flex items-center
+        px-2.5 py-1 text-xs font-medium
+        bg-blue-50 dark:bg-blue-900/20
+        text-blue-700 dark:text-blue-300
+        rounded-lg
+        border border-blue-200 dark:border-blue-800/50
         transition-all duration-300
         ${className}
       `}

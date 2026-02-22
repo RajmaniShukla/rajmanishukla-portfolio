@@ -19,15 +19,19 @@ export default function SectionWrapper({
     <section
       id={id}
       className={`
-        max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-24
+        max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16 lg:py-20
         ${showBorder ? "border-t border-gray-200 dark:border-gray-800/50" : ""}
         ${className}
       `}
     >
       {title && (
-        <h2 className="text-3xl sm:text-4xl font-semibold mb-10 bg-gradient-to-r from-gray-900 to-gray-600 dark:from-white dark:to-gray-400 bg-clip-text text-transparent">
-          {title}
-        </h2>
+        <div className="mb-8 sm:mb-10 lg:mb-12">
+          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-gray-900 dark:text-white">
+            {title}
+            <span className="text-blue-600 dark:text-blue-400">.</span>
+          </h2>
+          <div className="mt-3 h-1 w-16 sm:w-20 bg-gradient-to-r from-blue-600 to-blue-400 rounded-full"></div>
+        </div>
       )}
       {children}
     </section>

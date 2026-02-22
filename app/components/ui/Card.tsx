@@ -10,8 +10,8 @@ interface CardProps {
 
 const paddingStyles = {
   sm: "p-4",
-  md: "p-6",
-  lg: "p-8",
+  md: "p-4 sm:p-6",
+  lg: "p-6 sm:p-8",
 };
 
 export default function Card({
@@ -22,15 +22,15 @@ export default function Card({
   style,
 }: CardProps) {
   const baseStyles = `
-    rounded-xl
+    rounded-xl sm:rounded-2xl
     border border-gray-200 dark:border-gray-800/50
+    bg-white dark:bg-gray-900/30
     transition-all duration-300
   `;
 
   const hoverStyles = hover
     ? `
       hover:border-gray-300 dark:hover:border-gray-700
-      hover:bg-gray-50 dark:hover:bg-gray-900/30
       hover:shadow-xl hover:shadow-gray-200/50 dark:hover:shadow-gray-900/50
     `
     : "";
