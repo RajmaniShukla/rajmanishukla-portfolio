@@ -18,26 +18,26 @@ const projects = [
 
 export default function Projects() {
   return (
-    <section className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-24 border-t border-gray-800/50">
-      <h2 className="text-3xl sm:text-4xl font-semibold mb-10 bg-gradient-to-r from-white to-gray-400 bg-clip-text text-transparent">
+    <section className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-24 border-t border-gray-200 dark:border-gray-800/50">
+      <h2 className="text-3xl sm:text-4xl font-semibold mb-10 bg-gradient-to-r from-gray-900 to-gray-600 dark:from-white dark:to-gray-400 bg-clip-text text-transparent">
         Projects & Systems
       </h2>
       <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
         {projects.map((p, index) => (
           <div 
             key={p.title} 
-            className="group p-6 border border-gray-800/50 rounded-xl hover:border-gray-700 hover:bg-gray-900/30 transition-all duration-300 hover:scale-105 hover:shadow-xl hover:shadow-gray-900/50"
+            className="group p-6 border border-gray-200 dark:border-gray-800/50 rounded-xl hover:border-gray-300 dark:hover:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-900/30 transition-all duration-300 hover:scale-105 hover:shadow-xl hover:shadow-gray-200/50 dark:hover:shadow-gray-900/50"
             style={{ animationDelay: `${index * 100}ms` }}
           >
-            <h3 className="text-xl font-semibold mb-3 text-white group-hover:text-gray-100 transition-colors">
+            <h3 className="text-xl font-semibold mb-3 text-gray-900 dark:text-white group-hover:text-gray-800 dark:group-hover:text-gray-100 transition-colors">
               {p.title}
             </h3>
-            <p className="text-gray-400 mb-4 leading-relaxed">{p.desc}</p>
+            <p className="text-gray-600 dark:text-gray-400 mb-4 leading-relaxed">{p.desc}</p>
             <div className="flex flex-wrap gap-2">
               {p.tech.map(t => (
                 <span 
                   key={t} 
-                  className="px-3 py-1 text-xs font-medium bg-gray-800/50 text-gray-300 rounded-full border border-gray-700/50 group-hover:border-gray-600 group-hover:bg-gray-800 transition-all"
+                  className="px-3 py-1 text-xs font-medium bg-gray-100 dark:bg-gray-800/50 text-gray-700 dark:text-gray-300 rounded-full border border-gray-300 dark:border-gray-700/50 group-hover:border-gray-400 dark:group-hover:border-gray-600 group-hover:bg-gray-200 dark:group-hover:bg-gray-800 transition-all"
                 >
                   {t}
                 </span>

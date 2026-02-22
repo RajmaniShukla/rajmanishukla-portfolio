@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
-import { ThemeProvider } from "next-themes";
 import ThemeToggle from "./components/ThemeToggle";
+import { Providers } from "./providers";
 import "./globals.css";
 
 export const metadata: Metadata = {
@@ -17,12 +17,12 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body className="antialiased">
-        <ThemeProvider attribute="class" defaultTheme="dark" enableSystem={false}>
+        <Providers>
           <div className="fixed top-6 right-6 z-50">
             <ThemeToggle />
           </div>
           {children}
-        </ThemeProvider>
+        </Providers>
       </body>
     </html>
   );
