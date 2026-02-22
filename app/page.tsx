@@ -5,6 +5,8 @@ import {
   Projects,
   Skills,
   Education,
+  Achievements,
+  CodingProfiles,
   Contact,
 } from "@/app/components/sections";
 
@@ -16,6 +18,8 @@ export default function Home() {
       <Experience />
       <Projects />
       <Skills />
+      <CodingProfiles />
+      <Achievements />
       <Education />
       <Contact />
     </main>

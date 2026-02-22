@@ -9,12 +9,33 @@ export const skills: Skill[] = [
   { name: "Mentoring & Coaching", category: "Leadership" },
 ];
 
-// Technical skills for a more detailed view (optional use)
+// Technical skills from resume
 export const technicalSkills = {
-  languages: ["Python", "TypeScript", "Go", "SQL"],
-  cloud: ["AWS", "GCP", "Azure"],
-  mlops: ["MLflow", "Kubeflow", "SageMaker"],
-  infrastructure: ["Kubernetes", "Docker", "Terraform"],
-  databases: ["PostgreSQL", "MongoDB", "Redis"],
-  tools: ["Git", "CI/CD", "Prometheus", "Grafana"],
+  languages: ["Python", "C/C++", "SQL", "i4GL"],
+  frameworks: ["Flask", "NumPy", "Pandas", "Scikit-learn", "Matplotlib"],
+  cloud: ["AWS", "GCP"],
+  mlops: ["YOLO", "Faster R-CNN", "OpenCV", "NLTK"],
+  infrastructure: ["Linux", "Docker", "CI/CD"],
+  tools: ["Matlab", "Git", "Monitoring"],
 };
+
+// Certifications and Achievements
+export const achievements = [
+  {
+    id: "gate-2020",
+    title: "GATE 2020 Qualified",
+    description: "Graduate Aptitude Test in Engineering",
+    year: "2020",
+  },
+  {
+    id: "ceh-v9",
+    title: "CEHv9 Certified",
+    description: "Certified Ethical Hacker v9",
+    year: "2018 - 2021",
+  },
+  {
+    id: "hackathon-iitg",
+    title: "Hackathon Runner-up",
+    description: "IIT Guwahati Hackathon",
+  },
+];

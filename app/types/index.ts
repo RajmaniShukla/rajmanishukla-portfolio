@@ -49,6 +49,13 @@ export interface Skill {
   category?: string;
 }
 
+export interface Achievement {
+  id: string;
+  title: string;
+  description?: string;
+  year?: string;
+}
+
 export interface BlogPost {
   slug: string;
   title: string;
