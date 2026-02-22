@@ -32,18 +32,26 @@ export default function About() {
                 </div>
               </div>
               
-              <div className="flex items-center gap-3">
-                <div className="w-10 h-10 rounded-lg bg-green-100 dark:bg-green-900/30 flex items-center justify-center">
+              <div className="flex items-start gap-3">
+                <div className="w-10 h-10 rounded-lg bg-green-100 dark:bg-green-900/30 flex items-center justify-center flex-shrink-0">
                   <span className="text-lg">📧</span>
                 </div>
                 <div>
                   <p className="text-xs text-gray-500 dark:text-gray-500 uppercase tracking-wider">Email</p>
                   <a 
                     href={`mailto:${personalInfo.email}`}
-                    className="text-sm sm:text-base text-blue-600 dark:text-blue-400 font-medium hover:underline break-all"
+                    className="text-sm text-blue-600 dark:text-blue-400 font-medium hover:underline break-all block"
                   >
                     {personalInfo.email}
                   </a>
+                  {personalInfo.alumniEmail && (
+                    <a 
+                      href={`mailto:${personalInfo.alumniEmail}`}
+                      className="text-xs text-blue-600 dark:text-blue-400 hover:underline break-all block mt-1"
+                    >
+                      {personalInfo.alumniEmail}
+                    </a>
+                  )}
                 </div>
               </div>
               

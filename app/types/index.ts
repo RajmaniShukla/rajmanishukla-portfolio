@@ -6,6 +6,7 @@ export interface PersonalInfo {
   tagline: string;
   about: string;
   email: string;
+  alumniEmail?: string;
   resumeUrl: string;
   socialLinks: SocialLink[];
 }

@@ -76,7 +76,7 @@ export default function Contact() {
               href={`mailto:${personalInfo.email}`}
               className="flex items-center gap-4 p-4 rounded-xl border border-gray-200 dark:border-gray-800 hover:border-blue-300 dark:hover:border-blue-700 hover:bg-blue-50/50 dark:hover:bg-blue-900/10 transition-all group"
             >
-              <div className="w-12 h-12 rounded-xl bg-blue-100 dark:bg-blue-900/30 flex items-center justify-center group-hover:scale-110 transition-transform">
+              <div className="w-12 h-12 rounded-xl bg-blue-100 dark:bg-blue-900/30 flex items-center justify-center group-hover:scale-110 transition-transform flex-shrink-0">
                 <span className="text-xl">📧</span>
               </div>
               <div>
@@ -84,6 +84,11 @@ export default function Contact() {
                 <p className="text-gray-900 dark:text-white font-medium text-sm sm:text-base break-all">
                   {personalInfo.email}
                 </p>
+                {personalInfo.alumniEmail && (
+                  <p className="text-gray-600 dark:text-gray-400 text-xs sm:text-sm break-all mt-1">
+                    {personalInfo.alumniEmail}
+                  </p>
+                )}
               </div>
             </a>
             

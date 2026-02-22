@@ -10,6 +10,7 @@ I am a Tech Lead specializing in Infrastructure, Operations, and AI/ML systems, 
 US-based startup (ShelfEx LLC). I design and lead scalable platforms that support modern machine learning 
 and backend workloads.`,
   email: "rajanshukla756@hotmail.com",
+  alumniEmail: "rajmanishukla@alumni.outreach.iiit.ac.in",
   resumeUrl: "/resume.pdf",
   socialLinks: [
     {
